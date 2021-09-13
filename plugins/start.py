@@ -112,7 +112,7 @@ async def start_command(client: Client, message: Message):
 
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Join Channel", url = client.invitelink)]])
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("⚡️ʙᴇʀɢᴀʙᴜɴɢ ᴋᴇ ᴄʜᴀɴɴᴇʟ", url = client.invitelink)]])
     await message.reply(
         text = FORCE_MSG.format(
                 first = message.from_user.first_name,
