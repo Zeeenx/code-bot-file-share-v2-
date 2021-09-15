@@ -44,7 +44,7 @@ async def start_command(client: Client, message: Message):
             except:
                 return
             if start <= end:
-                ids = range(start,end+1)
+                ids = range(start,end+5)
             else:
                 ids = []
                 i = start
